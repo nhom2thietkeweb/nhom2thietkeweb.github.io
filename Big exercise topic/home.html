@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
-    <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- custom css -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
         * {
@@ -207,91 +205,6 @@
             width: 100%;
             pointer-events: none;
         }
-
-
-
-span {
-    color: var(--main-color);
-}
-.about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem;
-    background: white;
-}
-.about-img img {
-    width: 40vw;
-}
-.heading {
-    font-size: 4.5rem;
-    text-align: center;
-}
-.about-content h2 {
-    text-align: left;
-    line-height: 1.2;
-}
-.about-content h3 {
-    font-size: 2rem;
-}
-.about-content p {
-    font-size: 1.6rem;
-    margin: 2rem 0 3rem;
-}
-.Project{
-    padding-bottom: 10rem;
-}
-.Project h2{
-    margin-bottom: 4rem;
-}
-.Project .Project-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    gap: 2.5rem;
-}
-
-.Project-container .Project-box{
-    position: relative;
-    display: flex;
-    border-radius: 2rem;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
-}
-.contact h2 {
-    margin-bottom: 3rem;
-}
-.contact form {
-    max-width: 70rem;
-    margin: 1rem auto;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-.contact form .input-box {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.contact form .input-box input,
-.contact form textarea {
-    width: 100%;
-    padding: 1.5rem;
-    font-size: 1.6rem;
-    color: var(--text-color);
-    background: var(--bg-color);
-    border-radius: .8rem;
-    margin: .7rem 0;
-    box-shadow: 0 .1rem .5rem var(--shadow-color);
-}
-.contact form .input-box input {
-    width: 49%;
-}
-.contact form textarea {
-    resize: none;
-}
-.contact form .btn {
-    margin-top: 2rem;
-    cursor: pointer;
-}
     </style>
 </head>
 <body>
@@ -353,97 +266,5 @@ span {
             <img src="" alt="">
         </div>
     </section>
-
-
-    
-    <!-- ABOUT SECTION DESIGN -->
- <SECTion class="about" id="about">
-    <div class="about-img">
-        <img src="image/ABOUT.jpg" alt="">
-    </div>
-    <div class="about-content">
-        <h2 class="heading">About <span>Me</span></h2>
-        <h3>Nhóm 2</h3>
-        <p>Hiện tại đang học tập tại Trường Quốc tế- Đại học Quốc gia Hà Nội</p>
-        <a href="#" class="btn">Read More</a>
-    </div>
- </SECTion>
-
- <!-- skills section design -->
- <section class="skills" id="skills">
-    <h2 class="heading">My <span>Skills</span></h2>
-    <div class="skills-container">
-        <div class="skills-box">
-            <i class='code-alt' ></i>
-            <h3>Web Development</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi eum nemo iste veritatis, ipsam, quibusdam quidem minima dolore debitis laborum commodi voluptates eos totam illo! Voluptate harum molestias minima. Id?.</p>
-            <a href="#" class="btn">Read More</a>
-        </div>
-    </div>
-
-    <!-- portfolio section design-->
-<selection class="Project" id="Project">
-    <h2 class="heading">Latest <span>Project</span></h2>
-
-    <div class="Project-container">
-        <div class="Project-box">
-            <img src="images/img1.jpg" alt="">
-            <div class="Project-layer">
-                <h4>Web Design</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
-            
-            </div>
-        </div>
-        <div class="Project-box">
-            <img src="images/img2.jpg" alt="">
-            <div class="Project-layer">
-                <h4>Web Design</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
-                
-            </div>
-        </div>
-        <div class="Project-box">
-            <img src="images/img3.jpg" alt="">
-            <div class="Project-layer">
-                <h4>Web Design</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
-                
-            </div>
-        </div>
-        <div class="Project-box">
-            <img src="images/img4.jpg" alt="">
-            <div class="Project-layer">
-                <h4>Web Design</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
-                
-            </div>
-        </div>
-        <div class="Project-box">
-            <img src="images/img1.jpg" alt="">
-            <div class="Project-layer">
-                <h4>Web Design</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
-                
-            </div>
-        </div>
-    </div>
-</selection>
-
-    <!-- contact section design  -->
-    <section class="contact" id="contact">
-    <h2 class="heading">Contact <span>Me!</span></h2>
-    <from action="#">
-      <div class="inout-box">
-        <input type="text" placeholder="Full Name">
-        <input type="email" placeholder="Email Address">
-      </div>
-      <div class="input-box">
-        <input type="number" placeholder="Mobile Number">
-        <input type="text" placeholder="Email Subject">
-      </div>
-      <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-      <input type="submit" value="Send Message">
-    </from>
-  </section>
 </body>
 </html>
