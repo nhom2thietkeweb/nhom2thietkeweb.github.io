@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: 'Poppins', san-serif;
+}
+
+:root {
+   --bg-color: #fdfdfd;
+   --text-color: #333;
+   --main-color: #754ef9;
+   --white-color: #fdfdfd;
+   --shadow-color: rgba(0, 0, 0, .2);
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+.skills {
+    min-height: auto;
+    padding-bottom: 7rem;
+}
+.skills h2 {
+    margin-bottom: 5rem;
+}
+.skills .skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+
+.skills-container .Skills-box {
+    flex: 1 1 30rem;
+    background: var(--bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    box-shadow: 0 .1rem Srem var(--shadow-color);
+    text-align: center;
+    border-top: .6rem solid var(--main-color);
+    border-bottom: .6rem solid var(--main-color);
+    transition: .5s ease;
+}
+
+.skills-container .Skills-box:hover {
+    box-shadow: 0 .1rem 2rem var(--shadow-color);
+    transform: scale(1.02);
+}
+
+.Skills-box i {
+    font-size: 7rem;
+    color: var(--main-color);
+}
+
+.Skills-box h3 {
+    font-size: 2.6rem;
+    transition: .5s ease;
+}
+
+.Skills-box:hover h3 {
+    color: var(--main-color);
+}
+
+.Skills-box p {
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
+    </style>
+</head>
+<body>
+    <section class="Skills" id="Skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="Skills-container">
+               <div class="Skills-box">
+                <box-icon name='code-alt'></box-icon>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti qui rerum deserunt et laborum quisquam ratione magni facere sit! Praesentium, amet nemo!</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="Skills-box">
+                <box-icon type='solid' name='paint'></box-icon>
+                <h3>Graphic Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus officia ea illum molestiae beatae atque quae fuga accusamus, nulla exercitationem neque aliquid cum dicta architecto! Dignissimos dolores non obcaecati nam.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="Skills-box">
+                <box-icon name='bar-chart-alt' ></box-icon>
+                <h3>Digital Maketing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus officia ea illum molestiae beatae atque quae fuga accusamus, nulla exercitationem neque aliquid cum dicta architecto! Dignissimos dolores non obcaecati nam.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
