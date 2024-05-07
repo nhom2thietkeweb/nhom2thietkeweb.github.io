@@ -15,34 +15,36 @@
             border: none;
             outline: none;
             scroll-behavior: smooth;
+            font-family: 'Poppins', sans-serif;
         }
         :root {
+            --bg-color: #fdfdfd;
             --text-color: #333;
-            --main-color: #754ef9;
+            --main-color:#754ef9  ;
             --white-color: #fdfdfd;
-            --shadow-color: rgba(0, 0, 0, .2);
+            --shadow-color: rgba(0, 0, 0, .3);
         }
         html {
-            font-size: 90%;
+            font-size: 62,5%;
             overflow-x: hidden;
         }
         body {
-            background: var(--text-color);
-            color: var(--white-color);
+            background: pink  ;
+            color: var(--text-color);
         }
         .header {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
-            padding: 2rem 8%;
-            background: var(--white-color);
+            padding: 2rem 5%;
+            background: transparent;
             display: flex;
             align-items: center;
             z-index: 100;
         }
         .logo {
-            font-size: 4rem;
+            font-size: 2.5rem;
             color: var(--main-color);
             font-weight: 600;
             cursor: default;
@@ -51,18 +53,23 @@
         .navbar a {
             position: relative;
             font-size: 1.7rem;
-            color: var(--text-color);
-            font-weight: 600;
+            color: var(--black-color);
+            font-weight: 500;
             margin-right: 3.5rem;
         }
         .navbar a.active::before {
             content: '';
             position: absolute;
             left: 0;
-            bottom: -5px;
+            bottom: -6px;
             width: 100%;
             height: .2rem;
-            background: var(--main-color);
+            background: var(--white-color);
+        }
+        #darkMode-icon {
+            font-size: 2.4rem;
+            color: var(--white-color);
+            cursor: pointer;
         }
         section {
             min-height: 100vh;
@@ -73,20 +80,20 @@
             align-items: center;
         }
         .home .home-content {
-            max-width: 50rem;
+            max-width: 44rem;
         }
         .home-content h3 {
-            font-size: 3rem;
-            font-weight: 600;
-            line-height: 1;
+            font-size: 2.6rem;
+            font-weight: 500;
+            line-height: .2;
         }
         .home-content h1 {
-            font-size: 6rem;
+            font-size: 5.6rem;
             font-weight: 700;
-            margin-bottom: .2rem;
+            margin-bottom: .3rem;
         }
         .home-content p {
-            font-size: 2rem;
+            font-size: 1.2rem;
         }
         .home-content .social-media a {
             display: inline-flex;
@@ -95,9 +102,9 @@
             width: 4rem;
             height: 4rem;
             background: transparent;
-            border: .3rem solid var(--main-color);
+            border: .2rem solid var(--main-color);
             border-radius: 50%;
-            box-shadow: 0 .2rem .5rem var(--white-color);
+            box-shadow: 0 .2rem .5rem var(--shadow-color);
             font-size: 2rem;
             color: var(--main-color);
             margin: 2.5rem 1.5rem 3rem 0;
@@ -109,11 +116,11 @@
         }
         .btn {
             display: inline-block;
-            padding: 1.5rem 4rem;
+            padding: 1.2rem 2.8rem;
             background: var(--main-color);
-            border-radius: 10rem;
-            box-shadow: 0 .2rem .5rem var(--white-color);
-            font-size: 2rem;
+            border-radius: .6rem;
+            box-shadow: 0 .2rem .5rem var(--shadow-color);
+            font-size: 1.6rem;
             color: var(--white-color);
             letter-spacing: .1rem;
             font-weight: 600;
@@ -131,20 +138,25 @@
             right: 0;
             transform: translateY(-50%);
             width: 768px;
-            height: 644px;
+            height: 768px;
             overflow: hidden;
             pointer-events: none;
         }
-        .profession-container .overlay {
+        .home .profession-container .overlay {
             position: absolute;
             top: 0;
             right: 0;
             width: 0;
             height: 0;
-            border-top: 384px solid var(--main-color);
+            border-top: 383px solid var(--main-color);
             border-right: 384px solid var(--main-color);
             border-bottom: 384px solid var(--main-color);
-            border-left: 500px solid transparent;
+            border-left: 384px solid transparent;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 10%;
+            pointer-events: none;
         }
     </style>
 </head>
@@ -158,16 +170,16 @@
             <a href="https://nhom2thietkeweb.github.io/Big%20exercise%20topic/project.html">Projects</a>
             <a href="https://nhom2thietkeweb.github.io/Big%20exercise%20topic/contact.html">Contact</a>
         </nav>
+        <div class="bx bx-moon" id="darkMode-icon"></div>
     </header>
     <section class="home" id="home">
         <div class="home-content">
             <h3>Hello, this is</h3>
             <h1>Group 2</h1>
-            <p>Welcome to Group 2's website.</p>
+            <p>Our group consists of 6 members.</p>
             <div class="social-media">
                 <a href="#">
-                    <i class='bx bxl-facebook-circle' >
-                    </i>
+                    <i class='bx bxl-facebook-circle' ></i>
                 </a>
                 <a href="#">
                     <i class='bx bxl-instagram' ></i>
@@ -183,6 +195,9 @@
         </div>
         <div class="profession-container">
             <div class="overlay"></div>
+        </div>
+        <div class="home-img">
+            <img src="" alt="">
         </div>
     </section>
 </body>
