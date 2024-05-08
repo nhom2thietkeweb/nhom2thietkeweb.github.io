@@ -84,7 +84,20 @@ button:hover {
     border: 2px solid white;
     cursor: pointer;
 }
-    </style>
+        @media (max-width: 580px) {
+            .about {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+            .about-content h2 {
+                text-align: center;
+            }
+            .about-img img {
+                width: 70vw;
+                margin-top: -2rem;  
+            }
+        }
+</style>
 </head>
 <body>
  <SECTion class="about" id="about">
