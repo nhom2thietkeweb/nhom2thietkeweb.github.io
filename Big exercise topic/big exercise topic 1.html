@@ -64,6 +64,11 @@
             height: .2rem;
             background: var(--main-color);
         }
+        #menu-icon {
+            font-size: 3.6rem;
+            color: var(--text-color);
+            display: none;
+        }
         section {
             min-height: 100vh;
             padding: 10rem 7% 2rem;
@@ -146,6 +151,88 @@
             border-bottom: 384px solid var(--main-color);
             border-left: 500px solid transparent;
         }
+        @media (max-width: 990px) {
+            html {
+                font-size: 55%;
+            }
+            .home .profession-container {
+                height: 85.8rem;
+            }
+            .home .profession-container .overlay {
+                right: -9rem;
+            }
+        }
+        @media (max-width: 860px) {
+            .header {
+                padding: 2rem 3%;
+            }
+            section {
+                padding: 10rem 3% 2rem;
+            }
+            .home .profession-container .overlay {
+                right: -15rem;
+            }
+        }
+        @media (max-width: 750px) {
+            .home .home-content {
+                max-width: 50rem;
+            }
+            .home .profession-container .overlay {
+                right: -39.5rem;
+            }
+        }
+        @media (max-width: 580px) {
+            #menu-icon {
+                display: block;
+            }
+            .navbar {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                padding: 1rem 3%;
+                background: var(--white-color);
+                border-top: .1rem solid rgba(0, 0, 0, .2);
+                box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+                display: none;
+            }
+            .navbar.active {
+                display: block;
+            }
+            .navbar a {
+                display: block;
+                font-size: 2rem;
+                margin: 3rem 0;
+                color: var(--text-color);
+            }
+        .home {
+            padding: 0 3% 23rem;
+            justify-content: center;
+            text-align: center;
+        }
+        .home-content h3 {
+            font-size: 2.6rem;
+        }
+        .home-content h1 {
+            font-size: 5rem;
+        }
+        .home-content .social-media a {
+            margin: 2.5rem .75rem 3rem;
+        }
+        .home .profession-container {
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .home .profession-container .overlay {
+            position: fixed;
+            top: 70rem;
+            left: 50%;
+            right: 0;
+            transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
+            border-width: 23.9rem;
+        }
+    }
     </style>
 </head>
 <body>
@@ -158,6 +245,7 @@
             <a href="https://nhom2thietkeweb.github.io/Big%20exercise%20topic/projects.html">Projects</a>
             <a href="https://nhom2thietkeweb.github.io/Big%20exercise%20topic/contact.html">Contact</a>
         </nav>
+        <div class="bx bx-menu" id="menu-icon"></div>
     </header>
     <section class="home" id="home">
         <div class="home-content">
@@ -185,5 +273,14 @@
             <div class="overlay"></div>
         </div>
     </section>
+    <script>
+        let menuIcon = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
+        
+        menuIcon.onclick = () => {
+            menuIcon.classList.toggle('bx-x');
+            navbar.classList.toggle('active');
+        };
+    </script>
 </body>
 </html>
